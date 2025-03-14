@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "TwoParter";
+}
+@model DirectMessagePageModel
+
+@section Left {
+    <div hidden id="user-id">
+        @Model.Companion.Id
+    </div>
+    <div class="search-bar">
+        <form method="get" asp-action="SearchMsgs">
+            <input class="search-btn" type="submit" />
+            <input class="search-input" type="text" />
+        </form>
+    </div>
+    <div class="main-space">
+        <div style="{overflow-y: scroll}" class="msg-scroller main-space" id="msg-list">
+            @foreach (var msg in Model.Messages)
+            {
+                <br />
+                if (msg.Id == @Model.Current.Id)
+                {
+                    <div class="msg-self">
+                    <div>
+                        @msg.Text
+                    </div>
+                    <div class="msg-datetime">
+                        @msg.SentAt.ToShortTimeString()
+                    </div>
+                </div>
+                }
+                else
+                {
+                    <div class="msg">
+                    <div>
+                        @msg.Text
+                    </div>
+                    <div class="msg-datetime">
+                        @msg.SentAt.ToShortTimeString()
+                    </div>
+                </div>
+                }
+                Console.WriteLine(msg.Text);
+            }
+        </div>
+        <div id="msg-input-space">
+            <textarea id="msg-input" asp-for="MessageText"></textarea>
+            <button onclick="send()" class="generic-btn">Отправить</button>
+            <button class="generic-btn" asp-action="Include">Вложение</button>
+        </div>
+    </div>
+}
+
+@section Right {
+    <button class="transparent-btn">...</button>
+    <p>Placeholder</p>
+    <p>@(Model.Companion.Status ?? "")</p>
+    <p>TODO</p>
+}
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.js"></script>
+    <script src="~/js/msglist.js" asp-append-version="true"></script>
+}

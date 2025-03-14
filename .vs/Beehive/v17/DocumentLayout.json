@@ -1,0 +1,996 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\chatmodrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\chatmodrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\oldprivatemessageloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\oldprivatemessageloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\privatemessageloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\privatemessageloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\controllers\\directcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:controllers\\directcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\pagemodels\\usersearchpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\pagemodels\\usersearchpagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\controllers\\authorizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:controllers\\authorizecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\wwwroot\\js\\msglist.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:wwwroot\\js\\msglist.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\direct\\messages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\direct\\messages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\oldprivatemessagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\oldprivatemessagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\privatemessagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\privatemessagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\directhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:directhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\direct\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\direct\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\pagemodels\\directmessagepagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\pagemodels\\directmessagepagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.Messages.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.PrivateMessages.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\messagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\messagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\banlistrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\banlistrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\beehive.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:beehive.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\userrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\userrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\unreadrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\unreadrecords.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\postrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\postrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\postfilerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\postfilerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\chatmessagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\chatmessagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\chatmemberrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\chatmemberrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\chatbanrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\chatbanrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\oldchatmessagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\oldchatmessagerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\notificationrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\notificationrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\messagefilerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\messagefilerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\filerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\filerecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\commentrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\commentrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\chatrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\chatrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\chatneigboringrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\chatneigboringrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\dbrecords\\cellrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\dbrecords\\cellrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\message.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\shared\\twoparter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\shared\\twoparter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\modelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\authorize\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\authorize\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\authorize\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\authorize\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\shared\\empty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\shared\\empty.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\authmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\authmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\properties\\servicedependencies.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:properties\\servicedependencies.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:properties\\servicedependencies.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|d:\\\u0434\u0438\u043F\u043B\u043E\u043C\\beehive\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66ED8868-31E5-4F28-B081-A11938BFB40C}|Beehive.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 31,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T13:39:08.343Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DirectController.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Controllers\\DirectController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DirectController.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Controllers\\DirectController.cs",
+              "RelativeToolTip": "Controllers\\DirectController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwBUAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T16:07:04.047Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthorizeController.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Controllers\\AuthorizeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthorizeController.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Controllers\\AuthorizeController.cs",
+              "RelativeToolTip": "Controllers\\AuthorizeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T14:19:42.606Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "msglist.js",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\wwwroot\\js\\msglist.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\msglist.js",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\wwwroot\\js\\msglist.js",
+              "RelativeToolTip": "wwwroot\\js\\msglist.js",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-27T12:55:52.036Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DirectHub.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\DirectHub.cs",
+              "RelativeDocumentMoniker": "DirectHub.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\DirectHub.cs",
+              "RelativeToolTip": "DirectHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T22:23:46.272Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Messages.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Direct\\Messages.cshtml",
+              "RelativeDocumentMoniker": "Views\\Direct\\Messages.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Direct\\Messages.cshtml",
+              "RelativeToolTip": "Views\\Direct\\Messages.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T16:10:05.297Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MessageRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\MessageRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\MessageRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\MessageRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\MessageRecord.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:43:32.882Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Message.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\Message.cs",
+              "RelativeDocumentMoniker": "Models\\Message.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\Message.cs",
+              "RelativeToolTip": "Models\\Message.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T16:19:22.647Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DirectMessagePageModel.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\PageModels\\DirectMessagePageModel.cs",
+              "RelativeDocumentMoniker": "Models\\PageModels\\DirectMessagePageModel.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\PageModels\\DirectMessagePageModel.cs",
+              "RelativeToolTip": "Models\\PageModels\\DirectMessagePageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T16:16:41.556Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrivateMessageLoader.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\PrivateMessageLoader.cs",
+              "RelativeDocumentMoniker": "Models\\PrivateMessageLoader.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\PrivateMessageLoader.cs",
+              "RelativeToolTip": "Models\\PrivateMessageLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T16:30:19.466Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OldPrivateMessageLoader.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\OldPrivateMessageLoader.cs",
+              "RelativeDocumentMoniker": "Models\\OldPrivateMessageLoader.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\OldPrivateMessageLoader.cs",
+              "RelativeToolTip": "Models\\OldPrivateMessageLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:12:44.172Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Direct\\Search.cshtml",
+              "RelativeDocumentMoniker": "Views\\Direct\\Search.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Direct\\Search.cshtml",
+              "RelativeToolTip": "Views\\Direct\\Search.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T17:34:41.475Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserSearchPageModel.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\PageModels\\UserSearchPageModel.cs",
+              "RelativeDocumentMoniker": "Models\\PageModels\\UserSearchPageModel.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\PageModels\\UserSearchPageModel.cs",
+              "RelativeToolTip": "Models\\PageModels\\UserSearchPageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T17:26:12.965Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "TwoParter.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\TwoParter.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\TwoParter.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\TwoParter.cshtml",
+              "RelativeToolTip": "Views\\Shared\\TwoParter.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T16:00:14.72Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T15:52:39.782Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Authorize\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Authorize\\Register.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Authorize\\Register.cshtml",
+              "RelativeToolTip": "Views\\Authorize\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T13:51:21.239Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Authorize\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Authorize\\Login.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Authorize\\Login.cshtml",
+              "RelativeToolTip": "Views\\Authorize\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T14:38:06.209Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AuthModel.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\AuthModel.cs",
+              "RelativeDocumentMoniker": "Models\\AuthModel.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\AuthModel.cs",
+              "RelativeToolTip": "Models\\AuthModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T13:57:35.218Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\UserRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\UserRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\UserRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\UserRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:05:57.694Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "ApplicationContext.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\ApplicationContext.cs",
+              "RelativeToolTip": "ApplicationContext.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:47:17.678Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T15:53:46.084Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ModelBase.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\ModelBase.cs",
+              "RelativeDocumentMoniker": "Models\\ModelBase.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\ModelBase.cs",
+              "RelativeToolTip": "Models\\ModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T16:23:40.644Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PrivateMessageRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\PrivateMessageRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\PrivateMessageRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\PrivateMessageRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\PrivateMessageRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:08:32.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UnreadRecords.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\UnreadRecords.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\UnreadRecords.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\UnreadRecords.cs",
+              "RelativeToolTip": "Models\\DbRecords\\UnreadRecords.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:18:10.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-15T15:54:35.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-15T15:54:30.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "dbo.Messages.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.Messages.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.Messages.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-13T10:49:08.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OldPrivateMessageRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\OldPrivateMessageRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\OldPrivateMessageRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\OldPrivateMessageRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\OldPrivateMessageRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:14:37.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "dbo.PrivateMessages.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.PrivateMessages.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.PrivateMessages.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-13T10:48:55.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-16T20:19:18.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatModRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatModRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\ChatModRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatModRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\ChatModRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T13:43:30.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PostRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\PostRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\PostRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\PostRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\PostRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T19:51:48.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Beehive.csproj",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Beehive.csproj",
+              "RelativeDocumentMoniker": "Beehive.csproj",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Beehive.csproj",
+              "RelativeToolTip": "Beehive.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-15T17:32:55.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "BanListRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\BanListRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\BanListRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\BanListRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\BanListRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:14:30.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PostFileRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\PostFileRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\PostFileRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\PostFileRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\PostFileRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T19:57:50.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ChatMessageRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatMessageRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\ChatMessageRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatMessageRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\ChatMessageRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:56:25.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ChatMemberRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatMemberRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\ChatMemberRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatMemberRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\ChatMemberRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:29:59.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ChatBanRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatBanRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\ChatBanRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatBanRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\ChatBanRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:35:23.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "OldChatMessageRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\OldChatMessageRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\OldChatMessageRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\OldChatMessageRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\OldChatMessageRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:02:52.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "NotificationRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\NotificationRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\NotificationRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\NotificationRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\NotificationRecord.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAzwCIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:20:08.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MessageFileRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\MessageFileRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\MessageFileRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\MessageFileRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\MessageFileRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T17:25:48.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "FileRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\FileRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\FileRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\FileRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\FileRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:24:19.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CommentRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\CommentRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\CommentRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\CommentRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\CommentRecord.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T19:59:50.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ChatRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\ChatRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\ChatRecord.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:26:17.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ChatNeigboringRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatNeigboringRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\ChatNeigboringRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\ChatNeigboringRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\ChatNeigboringRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:36:33.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CellRecord.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\CellRecord.cs",
+              "RelativeDocumentMoniker": "Models\\DbRecords\\CellRecord.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\DbRecords\\CellRecord.cs",
+              "RelativeToolTip": "Models\\DbRecords\\CellRecord.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T16:17:32.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAIBJwCwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T15:59:40.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-15T16:02:23.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Empty.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\Empty.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Empty.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\Empty.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Empty.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-17T16:05:51.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T16:01:59.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-15T16:02:15.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T15:59:18.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T16:02:01.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "dbo.Users.sql",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/D__\u0414\u0418\u041F\u041B\u041E\u041C_BEEHIVE_BEEHIVE_TEST.MDF/True/SqlTable/dbo.Users.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-01-17T15:38:32.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "serviceDependencies.local.json",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Properties\\serviceDependencies.local.json",
+              "RelativeDocumentMoniker": "Properties\\serviceDependencies.local.json",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Properties\\serviceDependencies.local.json",
+              "RelativeToolTip": "Properties\\serviceDependencies.local.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-15T17:39:20.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "serviceDependencies.json",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Properties\\serviceDependencies.json",
+              "RelativeDocumentMoniker": "Properties\\serviceDependencies.json",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Properties\\serviceDependencies.json",
+              "RelativeToolTip": "Properties\\serviceDependencies.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-15T17:39:15.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T16:01:39.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T16:01:35.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-15T15:59:29.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\\u0414\u0438\u043F\u043B\u043E\u043C\\Beehive\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T15:59:10.181Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

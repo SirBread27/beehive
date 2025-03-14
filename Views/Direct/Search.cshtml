@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "TwoParter";
+}
+@model UserSearchPageModel
+
+@section Left {
+    <div class="search-bar">
+        <form method="get" asp-action="Search">
+            <input class="search-btn" type="submit" />
+            <input class="search-input" type="text" name="query"/>
+        </form>
+    </div>
+    <div class="main-space">
+        @foreach (var e in Model.Users)
+        {
+            <div class="user-result">
+                @e.Name
+                <button class="generic-btn">
+                    <a asp-action="Messages" asp-route-id="@e.Id" class="btn-link">Написать</a>
+                </button>
+            </div>
+        }
+    </div>
+}
+
+@section Right {
+
+}
+
+@section Scripts {
+
+}

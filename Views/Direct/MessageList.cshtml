@@ -1,0 +1,20 @@
+﻿@model DirectMessagePageModel
+
+<div style="{overflow-y: scroll}" class="msg-scroller main-space" id="msg-list">
+    @foreach (var msg in Model.Messages)
+    {
+        <p class="msg-avatar">avatar</p>
+        <div class="msg">
+            <div>
+                @msg.Text
+            </div>
+            <div class="msg-datetime">
+                @msg.SentAt.ToString()
+            </div>
+        </div>
+        Console.WriteLine(msg.Text);
+    }
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.js"></script>
+<script src="~/js/msglist.js"></script>
