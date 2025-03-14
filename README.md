@@ -1,3 +1,3 @@
-beehive
+Beehive. Социальная сеть
 
-work in progress
+Стадия готовности: зародыш.
