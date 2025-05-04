@@ -20,7 +20,16 @@ namespace Beehive.Models.DbRecords
         public string Email { get; set; } = null!;
 
         [Required]
-        public int Password { get; set; }
+        public byte[] Salt { get; set; } = null!;
+
+        [Required]
+        public byte[] PublicKey { get; set; } = null!;
+
+        [Required]
+        public byte[] EncryptedPrivateKey { get; set; } = null!;
+
+        [Required]
+        public byte[] Pbkdf2 { get; set; } = null!; 
 
         public string? Status { get; set; }
 

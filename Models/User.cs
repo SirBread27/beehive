@@ -17,6 +17,10 @@ namespace Beehive.Models
 
         public string? Status => record.Status;
 
+        public byte[] PublicKey => record.PublicKey;
+
+        internal byte[] EncryptedPrivateKey => record.EncryptedPrivateKey;
+
         //chats, pfp, banlist, posts
     }
 }

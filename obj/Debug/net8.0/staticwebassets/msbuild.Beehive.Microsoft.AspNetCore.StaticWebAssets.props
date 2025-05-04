@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2hnfz14tlm</Fingerprint>
-      <Integrity>lkvtF8GylH5X8jWZD2HqiNpCaGQdvUKVx+3ttJIbPdU=</Integrity>
+      <Fingerprint>ibxi5xr3p5</Fingerprint>
+      <Integrity>LjLbv7opSV1eo2nb1Zd7OEVv7qw8pvEYaDxQ3wLzNNg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\msglist.js'))</OriginalItemSpec>

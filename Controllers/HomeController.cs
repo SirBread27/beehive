@@ -7,16 +7,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Beehive.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController(ILogger<HomeController> logger, ApplicationContext context) : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private readonly ApplicationContext db;
-
-        public HomeController(ILogger<HomeController> logger, ApplicationContext context)
-        {
-            _logger = logger;
-            db = context;
-        }
+        private readonly ILogger<HomeController> _logger = logger;
+        private readonly ApplicationContext db = context;
 
         [Authorize]
         public IActionResult Index()

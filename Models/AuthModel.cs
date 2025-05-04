@@ -1,11 +1,14 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Security;
+using System.Security.Cryptography;
 
 namespace Beehive.Models
 {
-    public class AuthModel
+    public class AuthModel()
     {
-        static readonly private int[] nums = [7, 127, 61, 211, 13];
+        static readonly protected internal int[] nums = [7, 127, 61, 211, 13, 727, 311, 457, 607];
 
         [EmailAddress]
         [Display(Name = "e-mail")]
@@ -22,18 +25,25 @@ namespace Beehive.Models
         public string Password { get; set; } = null!;
 
         [Display(Name = "Пароль")]
-        public string? RepeatPassword { get; set; }
+        public string? RepeatPassword { get; set; } 
 
-        public int PasswordHash => EncryptPassword();
+        public byte[] Pbkdf2 => EncryptPassword();
 
         public bool ArePasswordsEqual => StringComparer.Ordinal.Equals(Password, RepeatPassword);
 
-        int EncryptPassword()
+        protected internal virtual byte[] EncryptPassword()
         {
-            var res = 13;
-            for (int i = 0; i != Password.Length; i++)
-                res += Password[i] * nums[i % 5];
-            return res;
+            using var db = new ApplicationContext();
+            byte[] salt;
+            try
+            {
+                salt = db.Users.First(e => StringComparer.Ordinal.Equals(e.Name, Name)).Salt;
+            }
+            catch
+            {
+                return null!;
+            }
+            return Rfc2898DeriveBytes.Pbkdf2(Password, salt, 210000, HashAlgorithmName.SHA256, 32);
         }
     }
 }

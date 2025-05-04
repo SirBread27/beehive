@@ -286,3 +286,4 @@ D:\Диплом\Beehive\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractio
 D:\Диплом\Beehive\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Диплом\Beehive\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 D:\Диплом\Beehive\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Диплом\Beehive\obj\Debug\net8.0\Beehive.sourcelink.json

@@ -1,18 +1,13 @@
-﻿const hub = new signalR.HubConnectionBuilder()
-    .withUrl("https://localhost:7251/dmhub")
-    .configureLogging(signalR.LogLevel.Trace)
-    .withAutomaticReconnect([0, 10, 30, 60, 90, 150])
-    .build();   
+﻿"use strict"
 
-async function start() {
-    try {
-        await hub.start();
-        console.log("SignalR Connected.");
-    } catch (err) {
-        console.log(err);
-        setTimeout(start, 5000);
-    }
-};
+const hub = new signalR.HubConnectionBuilder()
+    .withUrl("/dmhub")
+    .build();   
+hub.start();
+
+hub.on("Receive", (msg, dt) => getMsg(msg, dt, false));
+
+hub.on("ReceiveSelf", (msg, dt) => getMsg(msg, dt, true));
 
 function getMsg(text, dtv, isSelf) {
     var e = document.createElement("div");
@@ -30,12 +25,8 @@ function getMsg(text, dtv, isSelf) {
     document.getElementById("msg-list").appendChild(e);
 }
 
-hub.on("Receive", (msg, dt) => getMsg(msg, dt, false));
-
-hub.on("ReceiveSelf", (msg, dt) => getMsg(msg, dt, true));
-
 function send() {
-    var id = document.getElementById("user-id").textContent;
+    var id = document.getElementById("user-id").textContent.trim();
     var text = document.getElementById("msg-input").value;
     fetch(`/Direct/Send?id=${id}`, {
         method: "POST",
@@ -45,4 +36,3 @@ function send() {
     .then(txt => hub.invoke("Send", id, text, txt));
 }
 
-start();

@@ -31,5 +31,7 @@ namespace Beehive
         {
             Database.EnsureCreated();   
         }
+
+        public ApplicationContext() : base() { }
     }
 }
