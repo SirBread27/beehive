@@ -1,4 +1,6 @@
-﻿@{
+﻿@using System.Security.Cryptography
+@using System.Text
+@{
     Layout = "TwoParter";
 }
 @model DirectMessagePageModel
@@ -15,32 +17,34 @@
     </div>
     <div class="main-space">
         <div style="{overflow-y: scroll}" class="msg-scroller main-space" id="msg-list">
-            @foreach (var msg in Model.Messages)
-            {
-                <br />
-                if (msg.Id == @Model.Current.Id)
+            @{
+                var rsaSelf = RSA.Create();
+                rsaSelf.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Current.Id), 
+                    Model.Current.EncryptedPrivateKey, out var x1);
+                //rsaSelf.ImportRSAPublicKey(Model.Current.PublicKey, out var _);
+                var rsaOther = RSA.Create();
+                rsaOther.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Companion.Id),
+                    Model.Companion.EncryptedPrivateKey, out var x2);
+                //rsaOther.ImportRSAPublicKey(Model.Companion.PublicKey, out var _);
+                RSA pointer;
+                //string cl;
+                foreach (var msg in Model.Messages)
                 {
-                    <div class="msg-self">
-                    <div>
-                        @msg.Text
-                    </div>
-                    <div class="msg-datetime">
-                        @msg.SentAt.ToShortTimeString()
-                    </div>
-                </div>
+                    <br />
+                    pointer = msg.Sender.Id == @Model.Current.Id ? rsaSelf : rsaOther;
+                   // cl = msg.Sender.Id == @Model.Current.Id ? "msg-self" : "msg";
+
+                        <div class="msg">
+                            <div>
+                                @Encoding.Unicode.GetString(pointer.Decrypt(msg.Text, RSAEncryptionPadding.OaepSHA256))
+                            </div>
+                            <div class="msg-datetime">
+                                @msg.SentAt.ToShortTimeString()
+                            </div>
+                        </div>
+                    
+                    Console.WriteLine(msg.Text);
                 }
-                else
-                {
-                    <div class="msg">
-                    <div>
-                        @msg.Text
-                    </div>
-                    <div class="msg-datetime">
-                        @msg.SentAt.ToShortTimeString()
-                    </div>
-                </div>
-                }
-                Console.WriteLine(msg.Text);
             }
         </div>
         <div id="msg-input-space">

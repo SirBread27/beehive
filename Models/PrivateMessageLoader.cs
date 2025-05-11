@@ -18,6 +18,8 @@ namespace Beehive.Models
             return Set.Where(e => (e.SentTo.Id == UserId && e.SentBy.Id == SenderId) 
                         || (e.SentTo.Id == SenderId && e.SentBy.Id == UserId))
                       .OrderBy(e => e.SentAt)
+                      .Include(e => e.SentTo)
+                      .Include(e => e.SentBy)
                       .Select(e => new Message(e))
                       .GetEnumerator();
         }

@@ -8,9 +8,9 @@ namespace Beehive.Models.DbRecords
     public class PrivateMessageRecord : MessageRecord
     {
         [Required]
+        [ForeignKey("SentTo")]
         public Guid SentToId { get; set; }
 
-        [ForeignKey("SentToId")]
         [DeleteBehavior(DeleteBehavior.NoAction)]
         public UserRecord SentTo { get; set; } = null!;
     }

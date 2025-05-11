@@ -6,7 +6,7 @@ namespace Beehive.Models
     {
         public override Guid Id { get; } = Guid.NewGuid();
 
-        public string Text { get; set; } = null!;
+        public byte[] Text { get; set; } = null!;
 
         public DateTime SentAt { get; set; }
 

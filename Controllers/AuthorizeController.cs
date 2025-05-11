@@ -9,14 +9,23 @@ using Microsoft.AspNetCore.SignalR;
 using System.Security.Cryptography;
 using System.Security;
 using System.Runtime.InteropServices;
-using Humanizer.Bytes;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 namespace Beehive.Controllers
 {
-    public class AuthorizeController(ApplicationContext appContext, IHubContext<DirectHub> hubContext) : Controller
+    public class AuthorizeController : Controller
     {
-        readonly ApplicationContext db = appContext;
-        readonly IHubContext<DirectHub> hub = hubContext;
+        readonly ApplicationContext db;
+        readonly IHubContext<DirectHub> hub;
+
+        static private ApplicationContext database = null!;
+
+        public AuthorizeController(ApplicationContext appContext, IHubContext<DirectHub> hubContext)
+        {
+            db = appContext;
+            hub = hubContext;
+            database = appContext;
+        }
 
         [HttpGet]
         public IActionResult Register()
@@ -37,26 +46,39 @@ namespace Beehive.Controllers
                 ViewBag.Message = "Данный e-mail занят";
                 return View("Register");
             }
+            var pass = am.EncryptPassword();
             var rsa = RSA.Create();
-            var k = Rfc2898DeriveBytes.Pbkdf2(am.Password, am.Salt, 270000, HashAlgorithmName.SHA512, 64);
+            var k = Rfc2898DeriveBytes.Pbkdf2(am.Password, am.Salt, 270000, HashAlgorithmName.SHA512, 128);
             var priv = rsa.ExportEncryptedPkcs8PrivateKey(k, new PbeParameters(PbeEncryptionAlgorithm.Aes256Cbc, 
-                HashAlgorithmName.SHA512, 270000));
+                HashAlgorithmName.SHA256, 270000));
             var user = new UserRecord()
             {
+                Pbkdf2 = pass,
                 Id = Guid.NewGuid(),
                 Name = am.Name,
                 Email = am.Email,
                 Salt = am.Salt,
-                Pbkdf2 = am.Pbkdf2,
                 PublicKey = rsa.ExportRSAPublicKey(),
                 EncryptedPrivateKey = priv
             };
             rsa.Dispose();
             db.Users.Add(user);
             db.SaveChanges();
-            GlobalVals.Passwords.Add(user.Id, k);
+            GlobalVals.WritePasskey(user.Id, k);
             Authorize(user);
             return new RedirectToActionResult("Search", "Direct", new { query = "" }); //STUB
+        }
+
+        internal static byte[] GetSalt(string email)
+        {
+            try
+            {
+                return database.Users.First(e => e.Email == email).Salt;
+            }
+            catch
+            {
+                throw new NotImplementedException();
+            }
         }
 
         [HttpGet]
@@ -74,7 +96,7 @@ namespace Beehive.Controllers
                 ViewBag.Message = "Пользователь не найден";
                 return View("Login");
             }
-            if (user.Pbkdf2 != am.Pbkdf2)
+            if (!user.Pbkdf2.Zip(am.EncryptPassword()).All(e => e.First == e.Second))
             {
                 ViewBag.Message = "Неверный пароль";
                 return View("Login");

@@ -4,6 +4,8 @@ using Beehive.Models;
 using Microsoft.AspNetCore.Authorization;
 using Beehive.Models.DbRecords;
 using System.Security.Claims;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Beehive.Controllers
 {
@@ -17,7 +19,7 @@ namespace Beehive.Controllers
         [Authorize]
         public IActionResult Search(string? query)
         {
-            var user = HttpContext.User.FindFirst(ClaimTypes.Name)!.Value;
+            //var user = HttpContext.User.FindFirst(ClaimTypes.Name)!.Value;
             if (Models.User.Current is null) return Unauthorized();
             return View(new UserSearchPageModel(db.Users, Guid.Parse(Current), query));
         }
@@ -48,17 +50,23 @@ namespace Beehive.Controllers
             var user = db.Users.FirstOrDefault(e => e.Id == id);
             if (user is null)
                 return NotFound();
+            
             var dt = DateTime.Now;
             var g = HttpContext.User.FindFirst(ClaimTypes.Name)!.Value;
             var sender = db.Users.Entry(Models.User.CurrentRecord[g]);
             var sendTo = db.Users.Entry(user);
+            var rsa = RSA.Create();
+            rsa.ImportRSAPublicKey(Models.User.CurrentRecord[g].PublicKey.AsSpan(), out int _);
+            rsa.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(sender.Entity.Id), sender.Entity.EncryptedPrivateKey, out var _);
+            var bytes = Encoding.Unicode.GetBytes(text);
+            var r = rsa.Encrypt(bytes, RSAEncryptionPadding.OaepSHA256);
             var rec = new PrivateMessageRecord
             {
-                Message = text,
+                Message = r,
                 FileCount = 0,
                 SenderId = sender.Entity.Id,
                 SentAt = dt,
-                SentToId = sendTo.Entity.Id
+                SentToId = sendTo.Entity.Id,
             };
             db.PrivateMessages.Add(rec);
             db.SaveChanges();

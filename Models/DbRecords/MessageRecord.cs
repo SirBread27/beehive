@@ -13,15 +13,15 @@ namespace Beehive.Models.DbRecords
         public Guid Id { get; set; } = Guid.NewGuid();
 
         [Required]
-        public string Message { get; set; } = string.Empty;
+        public byte[] Message { get; set; } = null!;
 
         [Required]
         public byte FileCount { get; set; }
 
         [Required]
+        [ForeignKey("SentBy")]
         public Guid SenderId { get; set; }
 
-        [ForeignKey("SenderId")]
         [DeleteBehavior(DeleteBehavior.NoAction)]
         public UserRecord SentBy { get; set; } = null!;
 

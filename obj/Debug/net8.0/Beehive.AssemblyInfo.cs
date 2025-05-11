@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Beehive")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f44dde6ca3462a9156cb46ee609e41f71ac360f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+222b2e1ae8172266c584f06e93355e6787f66987")]
 [assembly: System.Reflection.AssemblyProductAttribute("Beehive")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Beehive")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

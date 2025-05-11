@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Beehive.Controllers;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Security;
@@ -27,22 +28,13 @@ namespace Beehive.Models
         [Display(Name = "Пароль")]
         public string? RepeatPassword { get; set; } 
 
-        public byte[] Pbkdf2 => EncryptPassword();
+        //public byte[] Pbkdf2 => EncryptPassword();
 
         public bool ArePasswordsEqual => StringComparer.Ordinal.Equals(Password, RepeatPassword);
 
         protected internal virtual byte[] EncryptPassword()
         {
-            using var db = new ApplicationContext();
-            byte[] salt;
-            try
-            {
-                salt = db.Users.First(e => StringComparer.Ordinal.Equals(e.Name, Name)).Salt;
-            }
-            catch
-            {
-                return null!;
-            }
+            byte[] salt = AuthorizeController.GetSalt(Email);
             return Rfc2898DeriveBytes.Pbkdf2(Password, salt, 210000, HashAlgorithmName.SHA256, 32);
         }
     }
