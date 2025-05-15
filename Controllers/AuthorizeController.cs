@@ -7,9 +7,6 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using System.Security.Cryptography;
-using System.Security;
-using System.Runtime.InteropServices;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
 
 namespace Beehive.Controllers
 {
@@ -106,7 +103,7 @@ namespace Beehive.Controllers
         }
 
         [Authorize]
-        [HttpPut]
+        [HttpPost]
         public IActionResult LogOut()
         {
             var g = HttpContext.User.FindFirst(ClaimTypes.Name)!.Value;

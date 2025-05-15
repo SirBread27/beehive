@@ -38,7 +38,9 @@
                             <a class="nav-link text-dark" asp-controller="Home" asp-action="Settings">Настройки</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Authorize" asp-action="LogOut">Выйти</a>
+                            <form method="post" asp-controller="Authorize" asp-action="LogOut">
+                                <input type="submit" class="nav-link text-dark" value="Выйти">
+                            </form>
                         </li>
                     </ul>
                 </div>
