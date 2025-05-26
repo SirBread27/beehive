@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<table id="two-part-layout">
+    <tr>
+        <td id="two-parter-left" width="75%">
+            @RenderSection("Left")
+        </td>
+        <td id="two-parter-right" width="25%">
+            @RenderSection("Right")
+        </td>
+    </tr>
+</table>
+
+@RenderSection("Scripts")
