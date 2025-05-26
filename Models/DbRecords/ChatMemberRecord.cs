@@ -13,13 +13,17 @@ namespace Beehive.Models.DbRecords
         public Guid Id { get; set; }
 
         [Required]
+        [ForeignKey("User")]
+        public Guid UserId { get; set; }
+
         [DeleteBehavior(DeleteBehavior.NoAction)]
-        [ForeignKey("userID")]
         public UserRecord User { get; set; } = null!;
 
         [Required]
+        [ForeignKey("Chat")]
+        public Guid ChatId { get; set; }
+
         [DeleteBehavior(DeleteBehavior.NoAction)]
-        [ForeignKey("chatID")]
         public ChatRecord Chat { get; set; } = null!;
     }
 }

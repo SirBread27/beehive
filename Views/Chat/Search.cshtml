@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "TwoParter";
+}
+@model ChatSearchPageModel
+
+@section Left {
+    <div class="search-bar">
+        <form method="get" asp-action="Search">
+            <input class="search-btn" type="submit" />
+            <input class="search-input" type="text" name="query" />
+            <input class="search-tick" type="checkbox" name="includeDescription" />
+            <label for="includeDescription" class="tick-label">Искать в описании</label>
+            <input class="search-tick" type="checkbox" name="global" />
+            <label for="global" class="tick-label">Глобальный поиск</label>
+        </form>
+        <button class="generic-btn">
+            <a asp-action="NewChat" class="btn-link">+</a>
+        </button>
+    </div>
+    <div class="main-space">
+        @foreach (var e in Model.Search())
+        {
+            <div class="chat-result">
+                @e.Title
+                <button class="generic-btn">
+                    <a asp-action="Chat" asp-route-id="@e.Id" class="btn-link">Написать</a>
+                </button>
+            </div>
+        }
+    </div>
+}
+
+@section Right {
+
+}
+
+@section Scripts {
+
+}

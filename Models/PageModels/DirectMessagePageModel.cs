@@ -7,7 +7,7 @@
 
         public User Companion => companion;
 
-        public string MessageText { get; set; } = "";
+        public string MessageText { get; set; } = string.Empty;
 
         public PrivateMessageLoader Loader => loader;
 

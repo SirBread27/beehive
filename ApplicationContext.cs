@@ -33,6 +33,12 @@ namespace Beehive
             Database.EnsureCreated();   
         }
 
+        public ApplicationContext(string connection) : base()
+        {
+            var b = new DbContextOptionsBuilder<ApplicationContext>().UseSqlServer(connection);
+            OnConfiguring(b);
+        }
+
         public ApplicationContext() : base() { }
     }
 }

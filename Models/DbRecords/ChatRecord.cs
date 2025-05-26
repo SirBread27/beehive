@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Beehive.Models.DbRecords
 {
@@ -19,11 +20,19 @@ namespace Beehive.Models.DbRecords
 
         public string? LongDescription { get; set; }
 
-        [ForeignKey("pfpID")]
+        [Required]
+        public int UserCount { get; set; } = 0;
+
+        [AllowNull]
+        [ForeignKey("Pfp")]
+        public Guid? PfpId { get; set; } = null;
+
         public FileRecord? Pfp { get; set; }
 
-        [Required]
-        [ForeignKey("cellID")]
+        [AllowNull]
+        [ForeignKey("Cell")]
+        public Guid? CellId { get; set; } = null;
+
         public CellRecord Cell { get; set; } = null!;
     }
 }

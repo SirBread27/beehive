@@ -8,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddMvc();
 builder.Services.AddSignalR();
+
+var conf = new ConfigurationBuilder().AddJsonFile(Path.Combine(Environment.CurrentDirectory, "appsettings.Development.json")).Build();
+builder.Services.AddOptions();
+builder.Services.Configure<ConnectionStrings>(conf.GetSection("ConnectionStrings"));
+
 //builder.Services.AddHttpContextAccessor();
 
 string connection = builder.Configuration.GetConnectionString("Default")!;
@@ -35,6 +40,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapHub<DirectHub>("/dmhub");
+app.MapHub<ChatHub>("/chathub");
 
 app.MapControllerRoute(
     name: "default",

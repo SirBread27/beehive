@@ -21,7 +21,7 @@
                 var rsaSelf = RSA.Create();
                 rsaSelf.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Current.Id), 
                     Model.Current.EncryptedPrivateKey, out var x1);
-                //rsaSelf.ImportRSAPublicKey(Model.Current.PublicKey, out var _);
+                //rsaSelf.ImportRSAPublicKey(Model.CurrentId.PublicKey, out var _);
                 var rsaOther = RSA.Create();
                 rsaOther.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Companion.Id),
                     Model.Companion.EncryptedPrivateKey, out var x2);
@@ -32,7 +32,7 @@
                 {
                     <br />
                     pointer = msg.Sender.Id == @Model.Current.Id ? rsaSelf : rsaOther;
-                   // cl = msg.Sender.Id == @Model.Current.Id ? "msg-self" : "msg";
+                   // cl = msg.Sender.Id == @Model.CurrentId.Id ? "msg-self" : "msg";
 
                         <div class="msg">
                             <div>

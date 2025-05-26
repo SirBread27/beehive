@@ -1,0 +1,77 @@
+﻿@using System.Security.Cryptography
+@using System.Text
+@{
+    Layout = "TwoParter";
+}
+@model ChatMessagePageModel
+
+@section Left {
+    <div hidden id="chat-id">
+        @Model.Chat.Id
+    </div>
+    <div class="search-bar">
+        <form method="get" asp-action="SearchMsgs">
+            <input class="search-btn" type="submit" />
+            <input class="search-input" type="text" />
+        </form>
+    </div>
+    <div class="main-space">
+        <div style="{overflow-y: scroll}" class="msg-scroller main-space" id="msg-list">
+            @{
+                var rsaSelf = RSA.Create();
+                rsaSelf.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Current.Id),
+                Model.Current.EncryptedPrivateKey, out var _);
+                var rsaOthers = new Dictionary<Guid, RSA>();
+                RSA pointer;
+                //string cl;
+                foreach (var msg in Model.Messages)
+                {
+                    <br />
+                    if (msg.Sender.Id == @Model.Current.Id) 
+                        pointer = rsaSelf;
+                    else
+                    {
+                        if (!rsaOthers.ContainsKey(msg.Sender.Id))
+                        {
+                            rsaOthers.Add(msg.Sender.Id, RSA.Create());
+                            rsaOthers[msg.Sender.Id].ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(msg.Sender.Id), 
+                                msg.Sender.EncryptedPrivateKey, out var _);
+                        }
+                        pointer = rsaOthers[msg.Sender.Id];
+                    }
+                    // cl = msg.Sender.Id == @Model.CurrentId.Id ? "msg-self" : "msg";
+
+                    <div class="msg">
+                        <div class="sender-name">
+                            @msg.Sender.Name
+                        </div>
+                        <div>
+                            @Encoding.Unicode.GetString(pointer.Decrypt(msg.Text, RSAEncryptionPadding.OaepSHA256))
+                        </div>
+                        <div class="msg-datetime">
+                            @msg.SentAt.ToShortTimeString()
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <div id="msg-input-space">
+            <textarea id="msg-input" asp-for="MessageText"></textarea>
+            <button onclick="send()" class="generic-btn">Отправить</button>
+            <button class="generic-btn" asp-action="Include">Вложение</button>
+        </div>
+    </div>
+}
+
+@section Right {
+    <button class="transparent-btn">...</button>
+    <p>Placeholder</p>
+    <p>@(Model.Chat.ShortDescription ?? "")</p>
+    <p>@(Model.Chat.LongDescription ?? "")</p>
+    <p>TODO</p>
+}
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.js"></script>
+    <script src="~/js/chatmsglist.js" asp-append-version="true"></script>
+}

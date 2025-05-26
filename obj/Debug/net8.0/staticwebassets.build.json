@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "njzwQFgiFnU4m7E/7kWZwcqVsiIviJfqA28OyuVkjrE=",
+  "Hash": "dCsFYAQhZmC5O3Twy6W4NUREkNfrITlZAoiWYq5uz7c=",
   "Source": "Beehive",
   "BasePath": "_content/Beehive",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Диплом\\Beehive\\wwwroot\\js\\chatmsglist.js",
+      "SourceId": "Beehive",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Диплом\\Beehive\\wwwroot\\",
+      "BasePath": "_content/Beehive",
+      "RelativePath": "js/chatmsglist#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3fy321ijf5",
+      "Integrity": "AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chatmsglist.js"
     },
     {
       "Identity": "D:\\Диплом\\Beehive\\wwwroot\\js\\msglist.js",
@@ -1666,6 +1687,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/chatmsglist.3fy321ijf5.js",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\js\\chatmsglist.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1091"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:32:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3fy321ijf5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/chatmsglist.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4="
+        }
+      ]
+    },
+    {
+      "Route": "js/chatmsglist.js",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\js\\chatmsglist.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1091"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:32:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4="
         }
       ]
     },

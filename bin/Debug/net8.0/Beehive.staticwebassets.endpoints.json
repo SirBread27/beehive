@@ -249,6 +249,88 @@
       ]
     },
     {
+      "Route": "js/chatmsglist.3fy321ijf5.js",
+      "AssetFile": "js/chatmsglist.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1091"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:32:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3fy321ijf5"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4="
+        },
+        {
+          "Name": "label",
+          "Value": "js/chatmsglist.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/chatmsglist.js",
+      "AssetFile": "js/chatmsglist.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1091"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 11:32:28 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AWmOoOTvOnrmFU/hgs66+yLK3B6VP2hgjwDAzu4TvY4="
+        }
+      ]
+    },
+    {
       "Route": "js/msglist.ibxi5xr3p5.js",
       "AssetFile": "js/msglist.js",
       "Selectors": [],
