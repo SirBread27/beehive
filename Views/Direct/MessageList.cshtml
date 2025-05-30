@@ -1,0 +1,48 @@
+﻿﻿@using System.Security.Cryptography
+@using System.Text
+@model DirectMessagePageModel
+
+<!-- NOTE!!!!!! FIX SIGNALR RSA BEHAVIOR -->
+
+<div style="{overflow-y: scroll}" class="msg-scroller main-space" id="msg-list">
+    @{
+        var rsaSelf = RSA.Create();
+        rsaSelf.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Current.Id),
+        Model.Current.EncryptedPrivateKey, out var x1);
+        rsaSelf.ImportRSAPublicKey(Model.Current.PublicKey, out var _);
+        var rsaOther = RSA.Create();
+        rsaOther.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Companion.Id),
+        Model.Companion.EncryptedPrivateKey, out var x2);
+        rsaOther.ImportRSAPublicKey(Model.Companion.PublicKey, out var _);
+        foreach (var msg in Model.Messages)
+        {
+            <br />
+            if (msg.Sender.Id == @Model.Current.Id)
+            {
+                <div class="msg-self">
+                    <div>
+                        @Encoding.Unicode.GetString(rsaSelf.Decrypt(msg.Text, RSAEncryptionPadding.OaepSHA256))
+                    </div>
+                    <div class="msg-datetime">
+                        @msg.SentAt.ToShortTimeString()
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="msg">
+                    <div>
+                        @Encoding.Unicode.GetString(rsaOther.Decrypt(msg.Text, RSAEncryptionPadding.OaepSHA256))
+                    </div>
+                    <div class="msg-datetime">
+                        @msg.SentAt.ToShortTimeString()
+                    </div>
+                </div>
+            }
+            Console.WriteLine(msg.Text);
+        }
+    }
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.js"></script>
+<script src="~/js/msglist.js"></script>
