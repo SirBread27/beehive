@@ -1,5 +1,11 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\beehive logo.png
+wwwroot\images\hexagons16.ico
+wwwroot\images\hexagons512.ico
+wwwroot\images\светлая тема.png
+wwwroot\images\темная тема 1.png
+wwwroot\images\темная тема 2.png
 wwwroot\js\chatmsglist.js
 wwwroot\js\msglist.js
 wwwroot\js\site.js

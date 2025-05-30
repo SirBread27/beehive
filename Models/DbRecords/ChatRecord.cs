@@ -34,5 +34,17 @@ namespace Beehive.Models.DbRecords
         public Guid? CellId { get; set; } = null;
 
         public CellRecord Cell { get; set; } = null!;
+
+        public override bool Equals(object? obj)
+        {
+            if (obj is null) return this is null;
+            if (obj is not ChatRecord cr) return false;
+            return cr.Id == Id;
+        }
+
+        public override int GetHashCode()
+        {
+            return Id.GetHashCode();
+        }
     }
 }

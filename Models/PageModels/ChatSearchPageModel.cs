@@ -10,20 +10,20 @@ namespace Beehive.Models.PageModels
 
         readonly DbSet<ChatRecord> set = ac.Chats;
 
-        readonly List<ChatRecord> userChats = user.GetChats(ac);
+        public readonly List<ChatRecord> UserChats = user.GetChats(ac);
 
-        public IEnumerable<ChatRecord> Users => Search().Take(250);
+        public IEnumerable<ChatRecord> ChatRes => Search().Take(250);
 
         public IEnumerable<ChatRecord> Search()
         {
             if (global) return GlobalSearch();
             if (string.IsNullOrEmpty(Query))
-                return userChats;
+                return UserChats;
             else
                 return set.Where(e => e.Title.Contains(Query) || (includeDesc && e.ShortDescription != null &&
                             e.ShortDescription.Contains(Query)) || (includeDesc && e.LongDescription != null &&
                             e.LongDescription.Contains(Query)))
-                          .OrderByDescending(e => userChats.Contains(e))
+                          .OrderByDescending(e => UserChats.Contains(e))
                           .ThenByDescending(e => e.Title.StartsWith(Query))
                           .ThenByDescending(e => e.Title.Contains(Query))
                           .ThenByDescending(e => e.UserCount)
@@ -36,7 +36,7 @@ namespace Beehive.Models.PageModels
                 return set;
             else
                 return set.Where(e => e.Title.Contains(Query))
-                          .OrderByDescending(e => userChats.Contains(e))
+                          .OrderByDescending(e => UserChats.Contains(e))
                           .ThenByDescending(e => e.Title.StartsWith(Query))
                           .ThenByDescending(e => e.Title.Contains(Query))
                           .ThenByDescending(e => e.UserCount)

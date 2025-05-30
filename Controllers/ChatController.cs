@@ -4,6 +4,7 @@ using Beehive.Models.PageModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using System;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -62,6 +63,24 @@ namespace Beehive.Controllers
             hub.Groups.AddToGroupAsync(CurrentId, chat.Id.ToString());
             return View("Messages", new ChatMessagePageModel(Current, new Chat(chat), new ChatMessageLoader(db.ChatMessages, chat.Id),
                 new OldChatMessageLoader(db.OldChatMessages, chat.Id)));
+        }
+
+        [Authorize]
+        public IActionResult Join(Guid id)
+        {
+            var cr = db.Chats.FirstOrDefault(c => c.Id == id);
+            if (cr is null) return NotFound();
+            var userId = Guid.Parse(CurrentId);
+            var memRec = new ChatMemberRecord
+            {
+                UserId = userId,
+                ChatId = cr.Id
+            };
+            db.ChatMemberRecs.Add(memRec);
+            db.SaveChanges();
+            hub.Groups.AddToGroupAsync(CurrentId, cr.Id.ToString());
+            return View("Messages", new ChatMessagePageModel(Current, new Chat(cr), new ChatMessageLoader(db.ChatMessages, cr.Id),
+                new OldChatMessageLoader(db.OldChatMessages, cr.Id)));
         }
 
         [Authorize]

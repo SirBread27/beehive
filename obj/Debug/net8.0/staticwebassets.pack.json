@@ -13,6 +13,30 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Диплом\\Beehive\\wwwroot\\images\\beehive logo.png",
+      "PackagePath": "staticwebassets\\images\\beehive logo.png"
+    },
+    {
+      "Id": "D:\\Диплом\\Beehive\\wwwroot\\images\\hexagons16.ico",
+      "PackagePath": "staticwebassets\\images\\hexagons16.ico"
+    },
+    {
+      "Id": "D:\\Диплом\\Beehive\\wwwroot\\images\\hexagons512.ico",
+      "PackagePath": "staticwebassets\\images\\hexagons512.ico"
+    },
+    {
+      "Id": "D:\\Диплом\\Beehive\\wwwroot\\images\\светлая тема.png",
+      "PackagePath": "staticwebassets\\images\\светлая тема.png"
+    },
+    {
+      "Id": "D:\\Диплом\\Beehive\\wwwroot\\images\\темная тема 1.png",
+      "PackagePath": "staticwebassets\\images\\темная тема 1.png"
+    },
+    {
+      "Id": "D:\\Диплом\\Beehive\\wwwroot\\images\\темная тема 2.png",
+      "PackagePath": "staticwebassets\\images\\темная тема 2.png"
+    },
+    {
       "Id": "D:\\Диплом\\Beehive\\wwwroot\\js\\chatmsglist.js",
       "PackagePath": "staticwebassets\\js\\chatmsglist.js"
     },

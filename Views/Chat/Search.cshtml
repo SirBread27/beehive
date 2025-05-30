@@ -1,7 +1,7 @@
-﻿@{
+﻿@model ChatSearchPageModel
+@{
     Layout = "TwoParter";
 }
-@model ChatSearchPageModel
 
 @section Left {
     <div class="search-bar">
@@ -23,8 +23,14 @@
             <div class="chat-result">
                 @e.Title
                 <button class="generic-btn">
-                    <a asp-action="Chat" asp-route-id="@e.Id" class="btn-link">Написать</a>
+                    <a asp-action="Chat" asp-route-id="@e.Id" class="btn-link">Открыть</a>
                 </button>
+                @if (!Model.UserChats.Contains(e))
+                {
+                    <button class="generic-btn">
+                        <a asp-action="Join" asp-route-id="@e.Id" class="btn-link">Присоединиться</a>
+                    </button>
+                }
             </div>
         }
     </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dCsFYAQhZmC5O3Twy6W4NUREkNfrITlZAoiWYq5uz7c=",
+  "Hash": "FKr4iXlxXY9F518nwysywxL5GKHvro8GlDGe7LdmFOc=",
   "Source": "Beehive",
   "BasePath": "_content/Beehive",
   "Mode": "Default",
@@ -101,6 +101,132 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\Диплом\\Beehive\\wwwroot\\images\\beehive logo.png",
+      "SourceId": "Beehive",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Диплом\\Beehive\\wwwroot\\",
+      "BasePath": "_content/Beehive",
+      "RelativePath": "images/beehive logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gso5vivrfj",
+      "Integrity": "QDxjiET5HfaHeEnFwuberR3nPj/hxcG87Knb90t15IY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\beehive logo.png"
+    },
+    {
+      "Identity": "D:\\Диплом\\Beehive\\wwwroot\\images\\hexagons16.ico",
+      "SourceId": "Beehive",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Диплом\\Beehive\\wwwroot\\",
+      "BasePath": "_content/Beehive",
+      "RelativePath": "images/hexagons16#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gkui1azmj5",
+      "Integrity": "wNsOTEsnXtS05DYGeg9xQgP9/AuasqPivsEOHHahg+Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hexagons16.ico"
+    },
+    {
+      "Identity": "D:\\Диплом\\Beehive\\wwwroot\\images\\hexagons512.ico",
+      "SourceId": "Beehive",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Диплом\\Beehive\\wwwroot\\",
+      "BasePath": "_content/Beehive",
+      "RelativePath": "images/hexagons512#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aiegeecrq7",
+      "Integrity": "cvOSkHKnkHlTEgAlRM02jlwu0WVj+LBBE64U8qUjTcg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hexagons512.ico"
+    },
+    {
+      "Identity": "D:\\Диплом\\Beehive\\wwwroot\\images\\светлая тема.png",
+      "SourceId": "Beehive",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Диплом\\Beehive\\wwwroot\\",
+      "BasePath": "_content/Beehive",
+      "RelativePath": "images/светлая тема#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eyzluoyv0w",
+      "Integrity": "uji2ROZN/ZmfPEDZjZD8FdmkmZ8dD6j7O+jjUFRpzI4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\светлая тема.png"
+    },
+    {
+      "Identity": "D:\\Диплом\\Beehive\\wwwroot\\images\\темная тема 1.png",
+      "SourceId": "Beehive",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Диплом\\Beehive\\wwwroot\\",
+      "BasePath": "_content/Beehive",
+      "RelativePath": "images/темная тема 1#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k3ljqabf6n",
+      "Integrity": "cNz/o7Kv3aiaOvUlCCpVtTFmOPU4kJashzBcWmd1Nz8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\темная тема 1.png"
+    },
+    {
+      "Identity": "D:\\Диплом\\Beehive\\wwwroot\\images\\темная тема 2.png",
+      "SourceId": "Beehive",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Диплом\\Beehive\\wwwroot\\",
+      "BasePath": "_content/Beehive",
+      "RelativePath": "images/темная тема 2#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eoc6jo9v1t",
+      "Integrity": "Utcer7Q/4Su0PnZgUXVRvz8H0f7oVd+NP4utgpNzIqU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\темная тема 2.png"
+    },
+    {
       "Identity": "D:\\Диплом\\Beehive\\wwwroot\\js\\chatmsglist.js",
       "SourceId": "Beehive",
       "SourceType": "Discovered",
@@ -136,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ibxi5xr3p5",
-      "Integrity": "LjLbv7opSV1eo2nb1Zd7OEVv7qw8pvEYaDxQ3wLzNNg=",
+      "Fingerprint": "espo92cfur",
+      "Integrity": "cvaNEzIwF/Lc5gtzGTFAO1lpjyQJ+KxkIax4GHVcTvI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\msglist.js"
@@ -1691,6 +1817,498 @@
       ]
     },
     {
+      "Route": "images/beehive logo.gso5vivrfj.png",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\beehive logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QDxjiET5HfaHeEnFwuberR3nPj/hxcG87Knb90t15IY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gso5vivrfj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beehive logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QDxjiET5HfaHeEnFwuberR3nPj/hxcG87Knb90t15IY="
+        }
+      ]
+    },
+    {
+      "Route": "images/beehive logo.png",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\beehive logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "82885"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QDxjiET5HfaHeEnFwuberR3nPj/hxcG87Knb90t15IY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QDxjiET5HfaHeEnFwuberR3nPj/hxcG87Knb90t15IY="
+        }
+      ]
+    },
+    {
+      "Route": "images/hexagons16.gkui1azmj5.ico",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\hexagons16.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wNsOTEsnXtS05DYGeg9xQgP9/AuasqPivsEOHHahg+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gkui1azmj5"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hexagons16.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wNsOTEsnXtS05DYGeg9xQgP9/AuasqPivsEOHHahg+Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/hexagons16.ico",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\hexagons16.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1150"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wNsOTEsnXtS05DYGeg9xQgP9/AuasqPivsEOHHahg+Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wNsOTEsnXtS05DYGeg9xQgP9/AuasqPivsEOHHahg+Q="
+        }
+      ]
+    },
+    {
+      "Route": "images/hexagons512.aiegeecrq7.ico",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\hexagons512.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9503"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cvOSkHKnkHlTEgAlRM02jlwu0WVj+LBBE64U8qUjTcg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aiegeecrq7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/hexagons512.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cvOSkHKnkHlTEgAlRM02jlwu0WVj+LBBE64U8qUjTcg="
+        }
+      ]
+    },
+    {
+      "Route": "images/hexagons512.ico",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\hexagons512.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9503"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cvOSkHKnkHlTEgAlRM02jlwu0WVj+LBBE64U8qUjTcg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cvOSkHKnkHlTEgAlRM02jlwu0WVj+LBBE64U8qUjTcg="
+        }
+      ]
+    },
+    {
+      "Route": "images/светлая тема.eyzluoyv0w.png",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\светлая тема.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1862430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uji2ROZN/ZmfPEDZjZD8FdmkmZ8dD6j7O+jjUFRpzI4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eyzluoyv0w"
+        },
+        {
+          "Name": "label",
+          "Value": "images/светлая тема.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uji2ROZN/ZmfPEDZjZD8FdmkmZ8dD6j7O+jjUFRpzI4="
+        }
+      ]
+    },
+    {
+      "Route": "images/светлая тема.png",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\светлая тема.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1862430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uji2ROZN/ZmfPEDZjZD8FdmkmZ8dD6j7O+jjUFRpzI4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uji2ROZN/ZmfPEDZjZD8FdmkmZ8dD6j7O+jjUFRpzI4="
+        }
+      ]
+    },
+    {
+      "Route": "images/темная тема 1.k3ljqabf6n.png",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\темная тема 1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1763620"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cNz/o7Kv3aiaOvUlCCpVtTFmOPU4kJashzBcWmd1Nz8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k3ljqabf6n"
+        },
+        {
+          "Name": "label",
+          "Value": "images/темная тема 1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cNz/o7Kv3aiaOvUlCCpVtTFmOPU4kJashzBcWmd1Nz8="
+        }
+      ]
+    },
+    {
+      "Route": "images/темная тема 1.png",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\темная тема 1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1763620"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cNz/o7Kv3aiaOvUlCCpVtTFmOPU4kJashzBcWmd1Nz8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cNz/o7Kv3aiaOvUlCCpVtTFmOPU4kJashzBcWmd1Nz8="
+        }
+      ]
+    },
+    {
+      "Route": "images/темная тема 2.eoc6jo9v1t.png",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\темная тема 2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1819556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Utcer7Q/4Su0PnZgUXVRvz8H0f7oVd+NP4utgpNzIqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eoc6jo9v1t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/темная тема 2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Utcer7Q/4Su0PnZgUXVRvz8H0f7oVd+NP4utgpNzIqU="
+        }
+      ]
+    },
+    {
+      "Route": "images/темная тема 2.png",
+      "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\images\\темная тема 2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1819556"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Utcer7Q/4Su0PnZgUXVRvz8H0f7oVd+NP4utgpNzIqU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Utcer7Q/4Su0PnZgUXVRvz8H0f7oVd+NP4utgpNzIqU="
+        }
+      ]
+    },
+    {
       "Route": "js/chatmsglist.3fy321ijf5.js",
       "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\js\\chatmsglist.js",
       "Selectors": [],
@@ -1773,7 +2391,7 @@
       ]
     },
     {
-      "Route": "js/msglist.ibxi5xr3p5.js",
+      "Route": "js/msglist.espo92cfur.js",
       "AssetFile": "D:\\Диплом\\Beehive\\wwwroot\\js\\msglist.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1783,7 +2401,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1086"
+          "Value": "1297"
         },
         {
           "Name": "Content-Type",
@@ -1791,11 +2409,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LjLbv7opSV1eo2nb1Zd7OEVv7qw8pvEYaDxQ3wLzNNg=\""
+          "Value": "\"cvaNEzIwF/Lc5gtzGTFAO1lpjyQJ+KxkIax4GHVcTvI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 08:29:07 GMT"
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1805,7 +2423,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ibxi5xr3p5"
+          "Value": "espo92cfur"
         },
         {
           "Name": "label",
@@ -1813,7 +2431,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LjLbv7opSV1eo2nb1Zd7OEVv7qw8pvEYaDxQ3wLzNNg="
+          "Value": "sha256-cvaNEzIwF/Lc5gtzGTFAO1lpjyQJ+KxkIax4GHVcTvI="
         }
       ]
     },
@@ -1828,7 +2446,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1086"
+          "Value": "1297"
         },
         {
           "Name": "Content-Type",
@@ -1836,11 +2454,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LjLbv7opSV1eo2nb1Zd7OEVv7qw8pvEYaDxQ3wLzNNg=\""
+          "Value": "\"cvaNEzIwF/Lc5gtzGTFAO1lpjyQJ+KxkIax4GHVcTvI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 21 Apr 2025 08:29:07 GMT"
+          "Value": "Fri, 30 May 2025 01:03:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1850,7 +2468,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LjLbv7opSV1eo2nb1Zd7OEVv7qw8pvEYaDxQ3wLzNNg="
+          "Value": "sha256-cvaNEzIwF/Lc5gtzGTFAO1lpjyQJ+KxkIax4GHVcTvI="
         }
       ]
     },
