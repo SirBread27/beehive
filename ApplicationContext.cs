@@ -26,11 +26,19 @@ namespace Beehive
         public DbSet<UserRecord> Users { get; set; } = null!;
         public DbSet<ChatModRecord> ChatModRecs { get; set; } = null!;
 
+        // Data/ApplicationContext.cs
+
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             : base(options)
         {
             //Database.EnsureDeleted(); //DEBUG
-            Database.EnsureCreated();
+            Database.EnsureCreated();   
+        }
+
+        public ApplicationContext(string connection) : base()
+        {
+            var b = new DbContextOptionsBuilder<ApplicationContext>().UseSqlServer(connection);
+            OnConfiguring(b);
         }
 
         public ApplicationContext() : base() { }

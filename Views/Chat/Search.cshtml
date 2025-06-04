@@ -1,0 +1,205 @@
+﻿@{
+    Layout = null;
+}
+@model UserSearchPageModel
+
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beehive | Поиск пользователей</title>
+    <script>
+        // Проверяем сохраненную тему или системные предпочтения ДО загрузки страницы
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            // Применяем тему сразу, чтобы избежать вспышки
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark-theme');
+                document.body.classList.remove('light-theme');
+            }
+        })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+    <link rel="icon" href="/images/hexagons16.ico" type="image/x-icon">
+    <style>
+        .light-theme {
+            background-image: url('/images/светлая тема.png');
+        }
+
+        .dark-theme {
+            background-image: url('/images/темная тема 1.png');
+        }
+
+        body {
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            transition: background-image 0.5s ease;
+        }
+
+        .hive-logo {
+            transition: all 0.3s ease;
+        }
+
+            .hive-logo:hover {
+                transform: scale(1.1);
+            }
+    </style>
+</head>
+<body class="light-theme">
+
+    <!-- Верхнее меню -->
+    <nav class="w-full backdrop-blur-md bg-white/95 dark:bg-neutral-900/95 shadow-md sticky top-0 z-20 border-b border-gray-200 dark:border-neutral-700 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+            <!-- Левый блок (лого + меню) -->
+            <div class="flex items-center">
+                <!-- Логотип -->
+                <a href="/Home/Index" class="mr-6 hive-logo" title="На главную">
+                    <img src="/images/beehive logo.png" alt="Beehive" class="h-7 w-7 object-contain">
+                </a>
+
+                <!-- Навигационные ссылки -->
+                <ul class="flex space-x-8 font-semibold text-gray-700 dark:text-gray-300 select-none">
+                    <li>
+                        <a href="Search" class="hover:text-yellow-500 transition flex items-center" title="Поиск">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="NewChat" class="hover:text-yellow-500 transition">Чаты</a></li>
+                    <li><a href="/Chat/Messages" class="hover:text-yellow-500 transition">Сообщения</a></li>
+                    <li><a href="/Notifications" class="hover:text-yellow-500 transition">Уведомления</a></li>
+                    <li><a href="/Maps" class="hover:text-yellow-500 transition">Карты</a></li>
+                    <li><a href="/Profile" class="hover:text-yellow-500 transition">Профиль</a></li>
+                    <li><a href="/Settings" class="hover:text-yellow-500 transition">Настройки</a></li>
+                </ul>
+            </div>
+
+            <!-- Правый блок (кнопки) -->
+            <div class="flex items-center gap-4">
+                <!-- Исправленная кнопка переключения темы -->
+                <button id="theme-toggle" class="relative p-2 text-gray-700 dark:text-yellow-300 hover:text-gray-900 dark:hover:text-yellow-400 transition-colors duration-300">
+                    <!-- Контейнер для иконок с фиксированными размерами -->
+                    <div class="relative h-6 w-6">
+                        <!-- Иконка луны (центрированная) -->
+                        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute top-0 left-0 opacity-0 dark:opacity-100 transition-opacity duration-300" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                        </svg>
+
+                        <!-- Иконка солнца (центрированная) -->
+                        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute top-0 left-0 opacity-100 dark:opacity-0 transition-opacity duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                </button>
+                <!-- Кнопка выхода -->
+                <form method="post" asp-controller="Authorize" asp-action="Logout">
+                    <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-4 py-1 rounded-lg shadow transition">
+                        Выйти
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Центрированный контент -->
+    <main class="flex-grow flex items-center justify-center px-6 py-10">
+        <div id="content-panel" class="w-full max-w-3xl p-10 rounded-2xl shadow-2xl backdrop-blur-md bg-white/95 dark:bg-neutral-900/95 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+            <h2 class="text-3xl font-bold text-center mb-8">Поиск пользователей</h2>
+
+            <!-- Форма поиска с обновленной кнопкой -->
+            <form method="get" asp-action="Search" class="flex gap-3 mb-8">
+                <input type="text" name="query" placeholder="Введите имя пользователя..."
+                       class="flex-grow px-5 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-500 transition" />
+                <button type="submit"
+                        class="px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-lg transition flex items-center justify-center">
+                    <!-- SVG-иконка лупы -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+            </form>
+
+            <div class="space-y-5 max-h-[400px] overflow-y-auto">
+                @if (Model.Users?.Any() == true)
+                {
+                    @foreach (var user in Model.Users)
+                    {
+                        <div class="flex justify-between items-center p-5 rounded-xl bg-gray-100 dark:bg-gray-800 shadow-sm transition-colors">
+                            <span class="text-lg font-medium">@user.Name</span>
+                            <a asp-action="Messages" asp-route-id="@user.Id"
+                               class="px-5 py-2 bg-gray-600 hover:bg-gray-700 text-white rounded-lg transition">
+                                Написать
+                            </a>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-center text-gray-600 dark:text-gray-400">Пользователи не найдены.</p>
+                }
+            </div>
+        </div>
+    </main>
+
+    <!-- Скрипт переключения темы -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const moonIcon = document.getElementById('moon-icon');
+            const sunIcon = document.getElementById('sun-icon');
+            const html = document.documentElement;
+            const body = document.body;
+
+            function setTheme(isDark) {
+                if (isDark) {
+                    html.classList.add('dark');
+                    body.classList.add('dark-theme');
+                    body.classList.remove('light-theme');
+                    moonIcon.classList.add('opacity-100');
+                    moonIcon.classList.remove('opacity-0');
+                    sunIcon.classList.add('opacity-0');
+                    sunIcon.classList.remove('opacity-100');
+                } else {
+                    html.classList.remove('dark');
+                    body.classList.remove('dark-theme');
+                    body.classList.add('light-theme');
+                    moonIcon.classList.add('opacity-0');
+                    moonIcon.classList.remove('opacity-100');
+                    sunIcon.classList.add('opacity-100');
+                    sunIcon.classList.remove('opacity-0');
+                }
+            }
+
+            // Проверка сохраненной темы
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                setTheme(true);
+            }
+
+            // Обработчик переключения
+            themeToggle.addEventListener('click', () => {
+                const isDark = !html.classList.contains('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                setTheme(isDark);
+            });
+        });
+    </script>
+</body>
+</html>

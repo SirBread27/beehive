@@ -1,0 +1,178 @@
+﻿@{
+    Layout = null;
+}
+@model Chat
+
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beehive | @ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        beehive: {
+                            yellow: '#fbbf24',
+                            dark: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .light-theme {
+            background-image: url('/images/светлая тема.png');
+        }
+
+        .dark-theme {
+            background-image: url('/images/темная тема 1.png');
+        }
+
+        .scrollable-column {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+            .scrollable-column::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            .scrollable-column::-webkit-scrollbar-thumb {
+                background-color: rgba(251, 191, 36, 0.5);
+                border-radius: 3px;
+            }
+    </style>
+</head>
+<body class="light-theme min-h-screen bg-cover bg-center bg-no-repeat">
+
+    <!-- Верхнее меню -->
+    <nav class="w-full backdrop-blur-md bg-white/95 dark:bg-neutral-900/95 shadow-md sticky top-0 z-20 border-b border-gray-200 dark:border-neutral-700 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="/Home/Index" class="mr-6" title="На главную">
+                    <img src="/images/beehive logo.png" alt="Beehive" class="h-7 w-7 object-contain">
+                </a>
+                <h1 class="text-xl font-semibold text-gray-700 dark:text-gray-300">Создать чат</h1>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="relative p-2 text-gray-700 dark:text-yellow-300 hover:text-gray-900 dark:hover:text-yellow-400 transition-colors duration-300">
+                    <!-- Иконки темы -->
+                </button>
+                <a href="/Home/Index" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-1 rounded-lg shadow transition">
+                    Назад
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="max-w-4xl mx-auto p-6">
+        <div class="backdrop-blur-md bg-white/90 dark:bg-neutral-900/90 rounded-2xl shadow-xl border border-gray-200 dark:border-neutral-700 p-8 transition-colors duration-300">
+            <form method="post" asp-action="CreateChat" class="space-y-6">
+                <!-- Аватар чата -->
+                <div class="flex justify-center">
+                    <div class="h-32 w-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl font-bold text-gray-400 dark:text-gray-500 mb-6">
+                        <span>Ч</span>
+                    </div>
+                </div>
+
+                <!-- Поля формы -->
+                <div>
+                    <label class="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Название чата</label>
+                    <input type="text" name="title" placeholder="Введите название"
+                           class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-gray-800 dark:text-gray-100" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Краткое описание</label>
+                    <input type="text" name="shortDesc" placeholder="Краткое описание чата"
+                           class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-gray-800 dark:text-gray-100" />
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium mb-1 text-gray-700 dark:text-gray-300">Полное описание</label>
+                    <textarea name="longDesc" placeholder="Подробное описание чата" rows="4"
+                              class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-gray-800 dark:text-gray-100"></textarea>
+                </div>
+
+                <!-- Колонки участников -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                    <!-- Соседи -->
+                    <div class="border border-gray-200 dark:border-neutral-700 rounded-lg p-4">
+                        <h3 class="font-semibold text-center mb-3 text-gray-700 dark:text-gray-300">Соседи</h3>
+                        <div class="scrollable-column space-y-2">
+                            <!-- TODO: Список соседей -->
+                            <div class="text-center py-4 text-gray-500 dark:text-gray-400">
+                                Список соседей будет здесь
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Модераторы -->
+                    <div class="border border-gray-200 dark:border-neutral-700 rounded-lg p-4">
+                        <h3 class="font-semibold text-center mb-3 text-gray-700 dark:text-gray-300">Модераторы</h3>
+                        <div class="scrollable-column space-y-2">
+                            <!-- TODO: Список модераторов -->
+                            <div class="text-center py-4 text-gray-500 dark:text-gray-400">
+                                Список модераторов будет здесь
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Кнопки -->
+                    <div class="flex flex-col justify-end space-y-3">
+                        <button type="submit"
+                                class="w-full px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold rounded-lg shadow transition">
+                            Создать чат
+                        </button>
+                        <a href="/Chat/Index"
+                           class="w-full px-4 py-2 border border-yellow-500 text-yellow-500 hover:bg-yellow-500/10 font-semibold rounded-lg transition text-center">
+                            Отмена
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Скрипт переключения темы -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+            const body = document.body;
+
+            function setTheme(isDark) {
+                if (isDark) {
+                    html.classList.add('dark');
+                    body.classList.add('dark-theme');
+                    body.classList.remove('light-theme');
+                } else {
+                    html.classList.remove('dark');
+                    body.classList.remove('dark-theme');
+                    body.classList.add('light-theme');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                setTheme(true);
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const isDark = !html.classList.contains('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                setTheme(isDark);
+            });
+        });
+    </script>
+</body>
+</html>

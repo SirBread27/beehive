@@ -1,0 +1,248 @@
+﻿@{
+    ViewData["Title"] = "Мои друзья";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beehive — @ViewData["Title"]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        beehive: {
+                            yellow: '#fbbf24',
+                            dark: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .light-theme {
+            background-image: url('/images/светлая тема.png');
+        }
+
+        .dark-theme {
+            background-image: url('/images/темная тема 1.png');
+        }
+
+        .friends-list {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(251, 191, 36, 0.5) transparent;
+        }
+
+            .friends-list::-webkit-scrollbar {
+                width: 6px;
+            }
+
+            .friends-list::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            .friends-list::-webkit-scrollbar-thumb {
+                background-color: rgba(251, 191, 36, 0.5);
+                border-radius: 3px;
+            }
+    </style>
+</head>
+<body class="light-theme min-h-screen bg-cover bg-center bg-no-repeat">
+
+    <!-- Навигационная панель -->
+    <nav class="w-full backdrop-blur-md bg-white/95 dark:bg-neutral-900/95 shadow-md sticky top-0 z-20 border-b border-gray-200 dark:border-neutral-700 transition-colors duration-300">
+        <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="/Home/Index" class="mr-6" title="На главную">
+                    <img src="/images/beehive logo.png" alt="Beehive" class="h-7 w-7 object-contain">
+                </a>
+                <ul class="flex space-x-8 font-semibold text-gray-700 dark:text-gray-300 select-none">
+                    <li>
+                        <a href="/Direct/Search" class="hover:text-yellow-500 transition flex items-center" title="Поиск">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="/Chat/NewChat" class="hover:text-yellow-500 transition">Чаты</a></li>
+                    <li><a href="/Chat/Messages" class="hover:text-yellow-500 transition">Сообщения</a></li>
+                    <li><a href="/Home/Friends" class="hover:text-yellow-500 transition">Друзья</a></li>
+                    <li><a href="/Home/Posts" class="hover:text-yellow-500 transition">Лента</a></li>
+                    <li><a href="/Home/Profile" class="hover:text-yellow-500 transition">Профиль</a></li>
+
+                </ul>
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="theme-toggle" class="relative p-2 text-gray-700 dark:text-yellow-300 hover:text-gray-900 dark:hover:text-yellow-400 transition-colors duration-300">
+                    <!-- Иконки темы -->
+                    <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute top-0 left-0 opacity-0 dark:opacity-100 transition-opacity duration-300" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                    <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute top-0 left-0 opacity-100 dark:opacity-0 transition-opacity duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </button>
+                <a href="/Direct/Search" class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-1 rounded-lg shadow transition">
+                    Назад
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="max-w-4xl mx-auto p-6">
+        <div class="backdrop-blur-md bg-white/90 dark:bg-neutral-900/90 rounded-2xl shadow-xl border border-gray-200 dark:border-neutral-700 p-8 transition-colors duration-300">
+            <!-- Поиск друзей -->
+            <div class="mb-6">
+                <div class="relative">
+                    <input type="text" placeholder="Поиск друзей..."
+                           class="w-full pl-10 pr-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500 text-gray-800 dark:text-gray-100">
+                    <div class="absolute left-3 top-2.5 text-gray-400 dark:text-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Вкладки -->
+            <div class="flex border-b border-gray-200 dark:border-neutral-700 mb-6">
+                <button class="px-4 py-2 font-medium text-yellow-500 border-b-2 border-yellow-500">Все друзья (3)</button>
+                <button class="px-4 py-2 font-medium text-gray-500 dark:text-gray-400 hover:text-yellow-500">Онлайн (2)</button>
+                <button class="px-4 py-2 font-medium text-gray-500 dark:text-gray-400 hover:text-yellow-500">Заявки</button>
+            </div>
+
+            <!-- Список друзей -->
+            <div class="friends-list space-y-4 max-h-[500px] overflow-y-auto pr-2">
+                <!-- Друг 1 -->
+                <div class="flex items-center justify-between p-3 hover:bg-gray-50 dark:hover:bg-neutral-800 rounded-lg transition">
+                    <div class="flex items-center">
+                        <div class="relative mr-4">
+                            <img src="/images/avatar1.jpg" class="w-12 h-12 rounded-full object-cover">
+                            <div class="absolute bottom-0 right-0 bg-green-500 w-3 h-3 rounded-full border-2 border-white dark:border-gray-900"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-gray-200">Иван Пчелкин</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Онлайн</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="p-2 text-gray-500 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </button>
+                        <button class="p-2 text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Друг 2 -->
+                <div class="flex items-center justify-between p-3 hover:bg-gray-50 dark:hover:bg-neutral-800 rounded-lg transition">
+                    <div class="flex items-center">
+                        <div class="relative mr-4">
+                            <img src="/images/avatar2.jpg" class="w-12 h-12 rounded-full object-cover">
+                            <div class="absolute bottom-0 right-0 bg-gray-400 w-3 h-3 rounded-full border-2 border-white dark:border-gray-900"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-gray-200">Мария Пчелова</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Был(а) 2 часа назад</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="p-2 text-gray-500 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </button>
+                        <button class="p-2 text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Друг 3 -->
+                <div class="flex items-center justify-between p-3 hover:bg-gray-50 dark:hover:bg-neutral-800 rounded-lg transition">
+                    <div class="flex items-center">
+                        <div class="relative mr-4">
+                            <img src="/images/avatar3.jpg" class="w-12 h-12 rounded-full object-cover">
+                            <div class="absolute bottom-0 right-0 bg-green-500 w-3 h-3 rounded-full border-2 border-white dark:border-gray-900"></div>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-gray-800 dark:text-gray-200">Алексей Ульев</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Онлайн</p>
+                        </div>
+                    </div>
+                    <div class="flex space-x-2">
+                        <button class="p-2 text-gray-500 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
+                        </button>
+                        <button class="p-2 text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Скрипт переключения темы -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const themeToggle = document.getElementById('theme-toggle');
+            const html = document.documentElement;
+            const body = document.body;
+            const moonIcon = document.getElementById('moon-icon');
+            const sunIcon = document.getElementById('sun-icon');
+
+            function setTheme(isDark) {
+                if (isDark) {
+                    html.classList.add('dark');
+                    body.classList.add('dark-theme');
+                    body.classList.remove('light-theme');
+                    moonIcon.classList.add('opacity-100');
+                    moonIcon.classList.remove('opacity-0');
+                    sunIcon.classList.add('opacity-0');
+                    sunIcon.classList.remove('opacity-100');
+                } else {
+                    html.classList.remove('dark');
+                    body.classList.remove('dark-theme');
+                    body.classList.add('light-theme');
+                    moonIcon.classList.add('opacity-0');
+                    moonIcon.classList.remove('opacity-100');
+                    sunIcon.classList.add('opacity-100');
+                    sunIcon.classList.remove('opacity-0');
+                }
+            }
+
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                setTheme(true);
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const isDark = !html.classList.contains('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                setTheme(isDark);
+            });
+        });
+    </script>
+</body>
+</html>

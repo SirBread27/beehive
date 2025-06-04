@@ -1,4 +1,4 @@
-﻿@using System.Security.Cryptography
+﻿﻿@using System.Security.Cryptography
 @using System.Text
 @model DirectMessagePageModel
 
@@ -8,11 +8,11 @@
     @{
         var rsaSelf = RSA.Create();
         rsaSelf.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Current.Id),
-            Model.Current.EncryptedPrivateKey, out var x1);
+        Model.Current.EncryptedPrivateKey, out var x1);
         rsaSelf.ImportRSAPublicKey(Model.Current.PublicKey, out var _);
         var rsaOther = RSA.Create();
         rsaOther.ImportEncryptedPkcs8PrivateKey(GlobalVals.ReadPassKey(Model.Companion.Id),
-            Model.Companion.EncryptedPrivateKey, out var x2);
+        Model.Companion.EncryptedPrivateKey, out var x2);
         rsaOther.ImportRSAPublicKey(Model.Companion.PublicKey, out var _);
         foreach (var msg in Model.Messages)
         {

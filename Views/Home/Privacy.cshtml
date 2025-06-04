@@ -9,6 +9,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beehive — @ViewData["Title"]</title>
+    <script>
+        // Проверяем сохраненную тему или системные предпочтения ДО загрузки страницы
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            // Применяем тему сразу, чтобы избежать вспышки
+            if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark-theme');
+                document.body.classList.remove('light-theme');
+            }
+        })();
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -43,6 +57,7 @@
             }
     </style>
     <link rel="icon" href="/images/hexagons16.ico" type="image/x-icon">
+
 </head>
 <body class="light-theme">
 
@@ -65,12 +80,12 @@
                             </svg>
                         </a>
                     </li>
-                    <li><a href="/Direct/MessageList" class="hover:text-yellow-500 transition">Чаты</a></li>
-                    <li><a href="/Direct/Messages" class="hover:text-yellow-500 transition">Сообщения</a></li>
-                    <li><a href="/Notifications" class="hover:text-yellow-500 transition">Уведомления</a></li>
-                    <li><a href="/Maps" class="hover:text-yellow-500 transition">Карты</a></li>
-                    <li><a href="/Profile" class="hover:text-yellow-500 transition">Профиль</a></li>
-                    <li><a href="/Settings" class="hover:text-yellow-500 transition">Настройки</a></li>
+                    <li><a href="/Chat/NewChat" class="hover:text-yellow-500 transition">Чаты</a></li>
+                    <li><a href="/Chat/Messages" class="hover:text-yellow-500 transition">Сообщения</a></li>
+                    <li><a href="/Home/Friends" class="hover:text-yellow-500 transition">Друзья</a></li>
+                    <li><a href="/Home/Posts" class="hover:text-yellow-500 transition">Лента</a></li>
+                    <li><a href="/Home/Profile" class="hover:text-yellow-500 transition">Профиль</a></li>
+
                 </ul>
             </div>
 

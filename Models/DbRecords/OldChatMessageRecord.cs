@@ -8,8 +8,10 @@ namespace Beehive.Models.DbRecords
     public class OldChatMessageRecord : MessageRecord
     {
         [Required]
+        [ForeignKey("Chat")]
+        public Guid ChatId { get; set; }
+
         [DeleteBehavior(DeleteBehavior.NoAction)]
-        [ForeignKey("chatID")]
         public ChatRecord Chat { get; set; } = null!;
 
         public static implicit operator ChatMessageRecord(OldChatMessageRecord c) => new() { Chat = c.Chat };

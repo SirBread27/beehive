@@ -1,4 +1,5 @@
 ﻿using Beehive.Models.DbRecords;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Principal;
 
 namespace Beehive.Models
@@ -20,6 +21,12 @@ namespace Beehive.Models
         public byte[] PublicKey => record.PublicKey;
 
         internal byte[] EncryptedPrivateKey => record.EncryptedPrivateKey;
+
+        public List<ChatRecord> GetChats(ApplicationContext ac)
+        {
+            var t = ac.ChatMemberRecs.Where(e => e.UserId == Id).Select(e => e.ChatId);
+            return [.. ac.Chats.Where(e => t.Contains(e.Id))];
+        }
 
         //chats, pfp, banlist, posts
     }

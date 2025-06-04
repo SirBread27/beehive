@@ -18,6 +18,48 @@ namespace Beehive.Controllers
             return View();
         }
 
+        [Authorize]
+        public IActionResult Posts()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Search()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Chats()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Profile()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Settings()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Notifications()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Friends()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
@@ -27,6 +69,14 @@ namespace Beehive.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
